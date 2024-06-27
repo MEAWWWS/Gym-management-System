@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gym.App">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.RelayCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Models.Aboniment">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAEAKAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\Aboniment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Models.Client">
+    <Position X="27.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEgCAABASAAACAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Models.Equipment">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Equipment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Models.GymAppDbContext">
+    <Position X="27.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAADAAAQAQBAAAACAAAAQAEAAAAAAAACAAAgAAAAA=</HashCode>
+      <FileName>Models\GymAppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Models.Session">
+    <Position X="25.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAgAAABIQIAACAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Models.TrainerInfo">
+    <Position X="24" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAACAABAwAAEAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Models\TrainerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Models.User">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAQAgAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.ViewModels.AbonimentEditViewModel" BaseTypeListCollapsed="true">
+    <Position X="20" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAgAAAIIAAAAAAgABAAAAAaAAAACAAAAA=</HashCode>
+      <FileName>ViewModels\AbonimentEditViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.AdminViewModel" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>cgIDlvZCACMUoAEQICQAUdAkgUQIodAEgORBEgCRAoA=</HashCode>
+      <FileName>ViewModels\AdminViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.ClientEditViewModel" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAACAAAAA0IAAAFQQAgABEAAAkQAAAMAAAABA=</HashCode>
+      <FileName>ViewModels\ClientEditViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.EquipmentEditViewModel">
+    <Position X="6.5" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAQAAgAEBAIAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\EquipmentEditViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.ViewModels.LoginViewModels">
+    <Position X="4.25" Y="16.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAwAgAAMAA=</HashCode>
+      <FileName>ViewModels\LoginViewModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.ViewModels.MainViewModel" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAASAAAAAAAAIAAAAAAAwQAAAAAAQAAACkAACAI=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.ManagerViewModel" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>UAACBhQAAAIEgAEQICQAERAkgQAAwZAAgAAAEgAQAgA=</HashCode>
+      <FileName>ViewModels\ManagerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.SessionEditViewModel" BaseTypeListCollapsed="true">
+    <Position X="9" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAUBAAAFAgAUoCAAFIAggADAAAAAwAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\SessionEditViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.TrainersEditViewModel" BaseTypeListCollapsed="true">
+    <Position X="4" Y="11.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAAAAAAAAKAAAAAwAgEBEAABAQAEAAAQAAEA=</HashCode>
+      <FileName>ViewModels\TrainersEditViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.TrainerViewModel" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgABAIYAAgAEIAAQICQAQBAkgEAAAAAIAAABAAAAAAA=</HashCode>
+      <FileName>ViewModels\TrainerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.ViewModels.UserEditViewModel">
+    <Position X="9" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAABAAAABAgAACQAAQAgAAEAA=</HashCode>
+      <FileName>ViewModels\UserEditViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gym.Views.Windows.AbonimentEditWindow" BaseTypeListCollapsed="true">
+    <Position X="14" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\AbonimentEditWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Windows.ClientEditWindow" BaseTypeListCollapsed="true">
+    <Position X="14" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\ClientEditWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Windows.EquipmentEditWindow" BaseTypeListCollapsed="true">
+    <Position X="16" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\EquipmentEditWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Windows.SessionEditWindow" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\SessionEditWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Windows.TrainerEditWindow" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\TrainerEditWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Windows.UserEditWindow" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Windows\UserEditWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Pages.AdminPage" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\AdminPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Pages.LoginPage" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\LoginPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Pages.ManagerPage" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\ManagerPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Gym.Views.Pages.TrainerPage" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Pages\TrainerPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,77 @@
+﻿<Page x:Class="Gym.Views.Pages.TrainerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gym.Views.Pages"
+      xmlns:vm="clr-namespace:Gym.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TrainerPage" Background="White">
+    <Page.DataContext>
+        <vm:TrainerViewModel/>
+    </Page.DataContext>
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="15*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Button Content="Exit" HorizontalAlignment="Right" Padding="10 0" VerticalAlignment="Center" Command="{Binding ExitBtnCommand}"/>
+                <TextBlock HorizontalAlignment="Left" Padding="10 0" VerticalAlignment="Center" Text="{Binding TrainerUser.Login}"/>
+            </Grid>
+        <TabControl Grid.Row="1">
+            <TabItem Header="Clients">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid ItemsSource="{Binding Clients}" SelectedItem="{Binding SelectedClient}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserReorderColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Width="0.25*" Binding="{Binding ClientId}"/>
+                            <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>
+                            <DataGridTextColumn Header="Phone" Width="*" Binding="{Binding Phone}"/>
+                            <DataGridTextColumn Header="Email" Width="*" Binding="{Binding Email}"/>
+                            <DataGridTextColumn Header="Aboniment Deadline" Width="*" Binding="{Binding Aboniment.DeadlineDate, StringFormat=dd.MM.yyyy}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Command="{Binding ClientAddBtnCommand}" Content="Set Session"/>
+                        <Button Command="{Binding ClientUpdateBtnCommand}" Content="Update" Grid.Column="3"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Sessions">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid ItemsSource="{Binding Sessions}" SelectedItem="{Binding SelectedSession}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserReorderColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Width="0.25*" Binding="{Binding SessionId}"/>
+                            <DataGridTextColumn Header="Session Date" Width="*" Binding="{Binding SessionDate, StringFormat=dd.MM.yyyy}"/>
+                            <DataGridTextColumn Header="Session Time" Width="*" Binding="{Binding SessionTime, StringFormat=HH:mm:ss}"/>
+                            <DataGridTextColumn Header="Session Start DateTime" Width="*" Binding="{Binding SessionStartDateTime, StringFormat=dd.MM.yyyy HH:mm:ss}"/>
+                            <DataGridTextColumn Header="Client" Width="*" Binding="{Binding Client.Name}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Command="{Binding SessionAddBtnCommand}" Content="Add"/>
+                        <Button Command="{Binding SessionUpdateBtnCommand}" Content="Update" Grid.Column="3"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        </Grid>
+</Page>

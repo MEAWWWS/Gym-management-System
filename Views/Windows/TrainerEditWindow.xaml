@@ -1,0 +1,38 @@
+﻿<Window x:Class="Gym.Views.Windows.TrainerEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gym.Views.Windows"
+        xmlns:vm="clr-namespace:Gym.ViewModels"
+        mc:Ignorable="d"
+        Title="TrainerEditWindow" Height="450" Width="800" x:Name="TrainerEditWindowElement">
+    <Window.DataContext>
+        <vm:TrainersEditViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Name"/>
+        <TextBlock Text="Specialization" Grid.Row="1"/>
+        <TextBlock Text="Schedule" Grid.Row="2"/>
+        <TextBlock Text="UserId" Grid.Row="3"/>
+
+        <TextBox Grid.Column="1" Text="{Binding Name}"/>
+        <TextBox Grid.Column="1" Text="{Binding Specialization}" Grid.Row="1"/>
+        <TextBox Grid.Column="1" Text="{Binding Schedule}" Grid.Row="2"/>
+        <ComboBox SelectedIndex="{Binding UserId}" Grid.Row="3" Grid.Column="1" ItemsSource="{Binding TrainersLogins}"/>
+
+        <Button Content="Save" Grid.Row="4" Grid.ColumnSpan="2" Command="{Binding SaveBtnCommand}" CommandParameter="{Binding ElementName=TrainerEditWindowElement}"/>
+    </Grid>
+</Window>
